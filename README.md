@@ -1,51 +1,13 @@
 # Packer
 
-[![Build Status][travis-badge]][travis]
-[![Windows Build Status][appveyor-badge]][appveyor]
-[![GoDoc][godoc-badge]][godoc]
-[![GoReportCard][report-badge]][report]
-
-[travis-badge]: https://travis-ci.org/hashicorp/packer.svg?branch=master
-[travis]: https://travis-ci.org/hashicorp/packer
-[appveyor-badge]: https://ci.appveyor.com/api/projects/status/miavlgnp989e5obc/branch/master?svg=true
-[appveyor]: https://ci.appveyor.com/project/hashicorp/packer
-[godoc-badge]: https://godoc.org/github.com/mitchellh/packer?status.svg
-[godoc]: https://godoc.org/github.com/mitchellh/packer
-[report-badge]: https://goreportcard.com/badge/github.com/mitchellh/packer
-[report]: https://goreportcard.com/report/github.com/mitchellh/packer
-
-* Website: https://www.packer.io
-* IRC: `#packer-tool` on Freenode
-* Mailing list: [Google Groups](https://groups.google.com/forum/#!forum/packer-tool)
-
-Packer is a tool for building identical machine images for multiple platforms
-from a single source configuration.
-
-Packer is lightweight, runs on every major operating system, and is highly
-performant, creating machine images for multiple platforms in parallel. Packer
-comes out of the box with support for the following platforms:
-
-* Amazon EC2 (AMI). Both EBS-backed and instance-store AMIs
-* Azure
-* CloudStack
-* DigitalOcean
-* Docker
-* Google Compute Engine
-* Hyper-V
-* 1&1
-* OpenStack
-* Oracle Cloud Infrastructure
-* Parallels
-* ProfitBricks
-* QEMU. Both KVM and Xen images.
-* Triton (Joyent Public Cloud)
-* VMware
-* VirtualBox
-
-Support for other platforms can be added via plugins.
-
-The images that Packer creates can easily be turned into
-[Vagrant](http://www.vagrantup.com) boxes.
+## Rigor Quick Start
+1. Have docker installed
+1. Clone this repo
+1. Build the thing  
+    ```sh
+    docker-compose up
+    ```
+1. Find the new binary in `./bin`
 
 ## Quick Start
 Download and install packages and dependencies

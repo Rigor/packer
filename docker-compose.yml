@@ -1,0 +1,7 @@
+version: '3'
+services:
+  builder:
+    build: .
+    volumes:
+      # This maps our working directory to the in
+      - "./bin:/go/src/app/vendor/github.com/hashicorp/packer/bin"
